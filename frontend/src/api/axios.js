@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://dailynews-ai-platform.onrender.com",
+  baseURL: "https://dailynews-ai-platform.onrender.com/api",
 });
 
 API.interceptors.request.use((req) => {
