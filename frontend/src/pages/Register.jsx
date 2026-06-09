@@ -17,7 +17,10 @@ const Register = () => {
     setError(''); // Reset error state on new attempts
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', formData);
+      const response = await axios.post(
+        'https://dailynews-ai-platform.onrender.com/api/auth/register',
+        formData
+      );
 
       // Save JWT token string safely inside the client browser storage
       response.data.token;
@@ -60,7 +63,7 @@ const Register = () => {
               <label className="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
               <div className="relative rounded-xl shadow-sm">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"><User className="h-4 w-4 text-slate-400" /></div>
-                <input type="text" name="username" required value={formData.name} onChange={handleChange} className="block w-full pl-10 pr-4 py-2 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all" placeholder="John Doe" />
+                <input type="text" name="username" required value={formData.username} onChange={handleChange} className="block w-full pl-10 pr-4 py-2 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all" placeholder="John Doe" />
               </div>
             </div>
 

@@ -18,8 +18,10 @@ const Login = () => {
 
     try {
       // Send login credentials to the MERN backend API
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
-
+      const res = await axios.post(
+        'https://dailynews-ai-platform.onrender.com/api/auth/login',
+        formData
+      );
       // Save token string securely inside the client browser storage
       localStorage.setItem('token', res.data.token);
 
