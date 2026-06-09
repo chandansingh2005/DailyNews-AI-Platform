@@ -77,9 +77,9 @@ function Home() {
 
       <div className="max-w-7xl mx-auto p-4">
 
-        <h1 className="text-4xl font-bold mb-6">
-          DailyNews AI
-        </h1>
+        <h2 className="text-3xl font-medium mb-6">
+         Read trending news and community articles.
+        </h2>
 
         <SearchBar onSearch={handleSearch} />
 

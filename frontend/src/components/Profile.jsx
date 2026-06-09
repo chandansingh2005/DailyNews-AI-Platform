@@ -61,7 +61,7 @@ function Profile() {
 
             <div>
               <h1 className="text-3xl font-bold">
-                {user.name}
+                {user.username}
               </h1>
 
               <p>{user.email}</p>
