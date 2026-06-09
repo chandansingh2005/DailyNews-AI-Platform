@@ -17,6 +17,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://daily-news-ai-platform.vercel.app",
+      "https://daily-news-ai-platform-oa0eu3a4y-chandansingh2005s-projects.vercel.app",
     ],
     credentials: true,
   })
